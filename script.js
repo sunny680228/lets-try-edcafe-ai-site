@@ -49,4 +49,20 @@ document.querySelectorAll('[data-lightbox]').forEach(button => button.addEventLi
 dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
 
+document.querySelectorAll('.copy-analysis-prompt').forEach(button => button.addEventListener('click', async () => {
+  const prompt = button.dataset.prompt;
+  const label = button.querySelector('.copy-label');
+  try {
+    await navigator.clipboard.writeText(prompt);
+    label.textContent = '已複製，可直接貼上 ✓';
+    button.classList.add('copied');
+  } catch {
+    label.textContent = '請長按提示詞複製';
+  }
+  setTimeout(() => {
+    label.textContent = '一鍵複製';
+    button.classList.remove('copied');
+  }, 1800);
+}));
+
 showPage(location.hash.slice(1) || 'home', false);

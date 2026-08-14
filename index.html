@@ -21,6 +21,7 @@
       <button class="nav-tab" role="tab" aria-selected="false" aria-controls="interface" data-page="interface">介面</button>
       <button class="nav-tab" role="tab" aria-selected="false" aria-controls="functions" data-page="functions">功能</button>
       <button class="nav-tab" role="tab" aria-selected="false" aria-controls="robots" data-page="robots">機器人</button>
+      <button class="nav-tab" role="tab" aria-selected="false" aria-controls="analytics" data-page="analytics">分析助手</button>
       <button class="nav-tab" role="tab" aria-selected="false" aria-controls="kahoot" data-page="kahoot">Edcafe × Kahoot</button>
     </nav>
   </header>
@@ -202,6 +203,73 @@
       </section>
 
       <aside class="safety-note"><strong>教師提醒</strong><p>請先設定資料範圍、避免要求學生輸入個資，並提醒學生：機器人的回答仍需查證。</p></aside>
+    </section>
+
+    <section id="analytics" class="page" role="tabpanel" tabindex="0" hidden>
+      <header class="section-heading compact analytics-heading">
+        <p class="eyebrow">ANALYTICS ASSISTANT</p>
+        <h2>從測驗數據，走向下一步教學</h2>
+        <p>分析助手不只統計分數，更協助教師看見全班表現、共同學習缺口、需要關注的學習狀況，以及後續可以採取的教學行動。</p>
+      </header>
+
+      <div class="analytics-hero">
+        <figure><img src="assets/analytics-overview-anonymized.png" alt="Edcafe 分析助手表現總覽畫面"></figure>
+        <div class="analytics-summary">
+          <p class="story-label">一眼看懂</p>
+          <h3>先看全貌，再追原因</h3>
+          <ul>
+            <li><strong>測驗概況</strong><span>作答人數、題數、平均表現與分數範圍。</span></li>
+            <li><strong>作答節奏</strong><span>中位時間、最快與最慢完成時間。</span></li>
+            <li><strong>對話追問</strong><span>可繼續請 AI 分析錯誤、補救與出題方向。</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="analytics-capabilities" aria-labelledby="analytics-capabilities-title">
+        <div class="analytics-capabilities-title">
+          <p class="story-label">它可以幫老師做什麼？</p>
+          <h3 id="analytics-capabilities-title">五個層次，把數據變成判斷</h3>
+        </div>
+        <div class="analytics-card-grid">
+          <article><span>01</span><h4>整理班級總覽</h4><p>快速彙整作答人數、平均表現、分數分布與答題時間，省下手動計算。</p></article>
+          <article><span>02</span><h4>辨識學習強項</h4><p>從高正確率題目看出學生已掌握的內容，確認哪些概念可以向前延伸。</p></article>
+          <article><span>03</span><h4>找出共同缺口</h4><p>定位全班較不熟悉的題目與概念，作為下一次講解、討論或補充素材的依據。</p></article>
+          <article><span>04</span><h4>發現關注需求</h4><p>辨識多題錯答、表現偏低或作答時間異常的情況，協助教師安排支持。</p></article>
+          <article><span>05</span><h4>提出後續行動</h4><p>將分析轉為重點補強、差異化任務、個別輔導或相似題練習。</p></article>
+        </div>
+      </section>
+
+      <div class="analytics-detail">
+        <div>
+          <p class="story-label">從診斷到行動</p>
+          <h3>分析結果不是句點，<br>而是下一堂課的起點</h3>
+          <div class="analytics-flow">
+            <article><span>1</span><strong>看整體</strong><p>先掌握班級平均與作答節奏。</p></article><i>→</i>
+            <article><span>2</span><strong>找落差</strong><p>比對強項、弱項與容易混淆的概念。</p></article><i>→</i>
+            <article><span>3</span><strong>定行動</strong><p>決定重教、分組、補救或延伸。</p></article>
+          </div>
+        </div>
+        <figure><img src="assets/analytics-insights-anonymized.png" alt="Edcafe 分析助手學習診斷與行動建議畫面"></figure>
+      </div>
+
+      <section class="analytics-prompts">
+        <div>
+          <p class="story-label">繼續追問</p>
+          <h3>把分析助手當成教學診斷夥伴</h3>
+          <p>點一下即可複製完整提示詞，直接貼上到分析助手的對話框。</p>
+        </div>
+        <div class="prompt-list">
+          <button type="button" class="copy-analysis-prompt" data-prompt="請依共同錯題，設計一個十分鐘的補救教學活動。"><span class="prompt-text">請依共同錯題，設計一個十分鐘的補救教學活動。</span><span class="copy-label">一鍵複製</span></button>
+          <button type="button" class="copy-analysis-prompt" data-prompt="請分析學生可能的錯誤概念，並提供教師追問句。"><span class="prompt-text">請分析學生可能的錯誤概念，並提供教師追問句。</span><span class="copy-label">一鍵複製</span></button>
+          <button type="button" class="copy-analysis-prompt" data-prompt="請依這份測驗結果，提出分組學習與差異化任務建議。"><span class="prompt-text">請依這份測驗結果，提出分組學習與差異化任務建議。</span><span class="copy-label">一鍵複製</span></button>
+          <button type="button" class="copy-analysis-prompt" data-prompt="請針對需要補強的概念，生成三題相似練習題與解析。"><span class="prompt-text">請針對需要補強的概念，生成三題相似練習題與解析。</span><span class="copy-label">一鍵複製</span></button>
+        </div>
+      </section>
+
+      <aside class="analytics-caution">
+        <strong>教師最後判讀</strong>
+        <p>AI 提出的學習缺口屬於資料推論。教師仍要回看題目品質、學生作答歷程與課堂觀察，才能判斷真正的錯誤原因。</p>
+      </aside>
     </section>
 
     <section id="kahoot" class="page" role="tabpanel" tabindex="0" hidden>
