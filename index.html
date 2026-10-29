@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="佳釧老師帶你認識 Edcafe AI：從特色、介面、功能到聊天機器人。">
   <title>Let’s try Edcafe AI!</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><circle cx=%2232%22 cy=%2232%22 r=%2230%22 fill=%22%23c8ef42%22/><path d=%22M32 15l4.8 12.2L49 32l-12.2 4.8L32 49l-4.8-12.2L15 32l12.2-4.8z%22 fill=%22%23173d32%22/></svg>">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,6 +23,7 @@
       <button class="nav-tab" role="tab" aria-selected="false" aria-controls="functions" data-page="functions">功能</button>
       <button class="nav-tab" role="tab" aria-selected="false" aria-controls="robots" data-page="robots">機器人</button>
       <button class="nav-tab" role="tab" aria-selected="false" aria-controls="analytics" data-page="analytics">分析助手</button>
+      <button class="nav-tab" role="tab" aria-selected="false" aria-controls="mini-app" data-page="mini-app">小程式</button>
       <button class="nav-tab" role="tab" aria-selected="false" aria-controls="kahoot" data-page="kahoot">Edcafe × Kahoot</button>
     </nav>
   </header>
@@ -270,6 +272,72 @@
         <strong>教師最後判讀</strong>
         <p>AI 提出的學習缺口屬於資料推論。教師仍要回看題目品質、學生作答歷程與課堂觀察，才能判斷真正的錯誤原因。</p>
       </aside>
+    </section>
+
+    <section id="mini-app" class="page" role="tabpanel" tabindex="0" hidden>
+      <header class="section-heading compact mini-app-heading">
+        <p class="eyebrow">EDCAFE MINI APPS</p>
+        <h2>不只產出內容，<br>更走完一次學習循環</h2>
+        <p>Edcafe AI 的「小程式」把教師設計的互動任務直接送到學生手上，從指派、作答到數據分析都在同一條路徑完成。</p>
+      </header>
+
+      <div class="learning-cycle" aria-label="Edcafe 小程式完整學習循環">
+        <article><span>01</span><strong>產出</strong><small>建立互動學習任務</small></article><i>→</i>
+        <article><span>02</span><strong>指派</strong><small>分享給指定學生</small></article><i>→</i>
+        <article><span>03</span><strong>學習</strong><small>學生直接互動作答</small></article><i>→</i>
+        <article><span>04</span><strong>收集</strong><small>自動彙整繳交成果</small></article><i>→</i>
+        <article><span>05</span><strong>分析</strong><small>掌握成績與歷程</small></article>
+      </div>
+
+      <section class="mini-app-contrast" aria-labelledby="mini-app-contrast-title">
+        <div class="contrast-before">
+          <p class="story-label">一般 AI 工具</p>
+          <h3>內容產出後，工作才剛開始</h3>
+          <ul><li>另外尋找派送方式</li><li>手動確認學生繳交</li><li>自行登記與整理結果</li></ul>
+        </div>
+        <div class="contrast-shift" aria-hidden="true">→</div>
+        <div class="contrast-after">
+          <p class="story-label">Edcafe 小程式</p>
+          <h3 id="mini-app-contrast-title">互動、追蹤、分析一次完成</h3>
+          <ul><li>任務直接指派給學生</li><li>即時查看答題與繳交</li><li>成績與作答數據自動整合</li></ul>
+        </div>
+      </section>
+
+      <div class="mini-app-value-grid">
+        <article><span>✦</span><h3>看見學習路徑</h3><p>不只看到最後分數，也能掌握學生在互動任務中的答題歷程。</p></article>
+        <article><span>✓</span><h3>掌握繳交狀況</h3><p>即時確認誰已完成、誰仍進行中，教師不必逐一詢問或登記。</p></article>
+        <article><span>↻</span><h3>自動整合數據</h3><p>活動完成後，系統直接收集成績與作答資料，減少手動批改整理。</p></article>
+      </div>
+
+      <section class="mini-app-video" aria-labelledby="mini-app-video-title">
+        <div class="video-intro">
+          <p class="story-label">操作示範</p>
+          <h3 id="mini-app-video-title">跟著影片看一次完整流程</h3>
+          <p>從建立小程式、設定任務到查看學生學習成果，透過實際操作快速掌握使用方式。</p>
+          <div class="video-meta"><span>約 1 分 29 秒</span><span>含操作聲音</span></div>
+        </div>
+        <div class="video-frame">
+          <video controls preload="metadata" playsinline poster="assets/edcafe-mini-app-poster.jpg">
+            <source src="assets/edcafe-mini-app-demo.mp4" type="video/mp4">
+            您的瀏覽器不支援影片播放，請改用最新版瀏覽器。
+          </video>
+        </div>
+      </section>
+
+      <section class="mini-app-takeaway" aria-labelledby="mini-app-takeaway-title">
+        <div class="mini-app-takeaway-head">
+          <div>
+            <strong id="mini-app-takeaway-title">小程式的使用步驟和關鍵價值</strong>
+            <p>把 AI 從「幫老師生成內容」推進到「真正陪學生完成學習」，並讓教師以數據決定下一步教學。</p>
+          </div>
+          <a class="mini-app-generator-link" href="https://sunny680228.github.io/Interactive-Web-new/" target="_blank" rel="noopener noreferrer">開啟互動式網頁專用 AI 提示詞生成器 <span aria-hidden="true">↗</span></a>
+        </div>
+        <ol class="mini-app-steps">
+          <li><span>01</span><div><strong>生成提示詞</strong><p>使用「互動式網頁專用 AI 提示詞生成器」，生成提示詞。</p></div></li>
+          <li><span>02</span><div><strong>製作互動網頁</strong><p>利用提示詞，請 AI 生成互動式網頁，並下載 HTML 檔。</p></div></li>
+          <li><span>03</span><div><strong>上傳並分享</strong><p>到 Edcafe 小程式上傳 HTML 檔，並分享連結給學生，即可掌握學習歷程。</p></div></li>
+        </ol>
+      </section>
     </section>
 
     <section id="kahoot" class="page" role="tabpanel" tabindex="0" hidden>
